@@ -5,6 +5,7 @@ import { BsArrowUpRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
+import { Link } from 'react-scroll';
 
 // services data
 const services = [
@@ -52,7 +53,9 @@ const Services = () => {
               I'm a Freelance Front-end Developer with over 5 years of
               experience.
             </h3>
-            <button className='btn btn-sm'>See my work</button>
+            <Link to='work' 
+            smooth={true}
+            spy={true}><button className='btn btn-sm'>See my work</button></Link>
           </motion.div>
           {/* services */}
           <motion.div
@@ -81,15 +84,15 @@ const Services = () => {
                       </p>
                     </div>
                     <div className='flex flex-col flex-1 items-end'>
-                      <a
+                      {/* <a
                         href='#'
                         className='btn w-9 h-9 mb-[42px] flex justify-center items-center'
                       >
                         <BsArrowUpRight />
-                      </a>
-                      <a href='#' className='text-gradient text-sm'>
+                      </a> */}
+                      {/* <a href='#' className='text-gradient text-sm'>
                         {link}
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 );

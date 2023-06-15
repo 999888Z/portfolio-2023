@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
 // img
-import Img1 from '../assets/portfolio-img1.png';
-import Img2 from '../assets/portfolio-img2.png';
-import Img3 from '../assets/portfolio-img3.png';
+import Img1 from '../assets/workout-wizard.png';
+import Img2 from '../assets/concert-connection.png';
+import Img3 from '../assets/image-ai-screenshot.png';
 
 const Work = () => {
   return (
@@ -31,9 +31,10 @@ const Work = () => {
                 Repellat, hic! Harum quis, cum velit neque esse eos molestias
                 doloremque explicabo!
               </p>
-              <button className='btn btn-sm'>View all projects</button>
+              <a href='https://github.com/999888Z'><button className='btn btn-sm'>View all projects</button></a>
             </div>
             {/* image */}
+            <a href='https://workout-wizard-app-99.herokuapp.com/'>
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* overlay */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -45,13 +46,13 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>React Application</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>Workout Wizard</span>
               </div>
-            </div>
+            </div></a>
           </motion.div>
           <motion.div
             variants={fadeIn('left', 0.2)}
@@ -61,6 +62,7 @@ const Work = () => {
             className='flex-1 flex flex-col gap-y-10'
           >
             {/* image */}
+            <a href='https://ionscion.github.io/miniature-garbanzo/'>
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* overlay */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -76,10 +78,11 @@ const Work = () => {
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>Concert Connection</span>
               </div>
-            </div>
+            </div></a>
             {/* image */}
+            <a href=''>
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* overlay */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -91,13 +94,13 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>AI Integration</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>Image AI</span>
               </div>
-            </div>
+            </div></a>
           </motion.div>
         </div>
       </div>
